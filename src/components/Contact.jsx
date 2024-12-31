@@ -11,7 +11,7 @@ const Contact = () => {
                     <div className='flex-1'>
                         <h3
                             className='text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r 
-            from-green-400 to-blue-500 mb-4'></h3>
+            from-green-400 to-blue-500 mb-4'></h3>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
                         <p></p>
                         <div className='mb-4 mt-8'>
                             <FaEnvelope className='inline-block text-blue-400 mr-2'></FaEnvelope>
@@ -39,7 +39,7 @@ const Contact = () => {
                                 <input
                                     type='text'
                                     className='w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none
-                    focus:border-green-400'
+                    focus:border-blue-400'
                                     placeholder='Enter You Name'
                                 />
                             </div>
@@ -50,7 +50,7 @@ const Contact = () => {
                                 <input
                                     type='text'
                                     className='w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none
-                    focus:border-green-400'
+                    focus:border-blue-400'
                                     placeholder='Enter You Email'
                                 />
                             </div>
@@ -61,13 +61,13 @@ const Contact = () => {
                                 <textarea
                                     type='text'
                                     className='w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none
-                    focus:border-green-400'
+                    focus:border-blue-400'
                                     rows='5'
                                     placeholder='Enter You Message'
                                 />
                             </div>
                             <button
-                                className='bg-gradient-to-r from-violet-400 to-blue-500 text-white hidden md:inline
+                                className='bg-gradient-to-r from-violet-800 to-blue-900 text-white hidden md:inline
             transform transition-transform duration-300 hover:scale-105 px-8 py-2 rounded-full'>
                                 Send
                             </button>

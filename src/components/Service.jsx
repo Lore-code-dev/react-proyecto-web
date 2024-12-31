@@ -22,13 +22,13 @@ const services = [
     },
     {
         id: 5,
-        title: 'Content Writing',
-        description: 'Writing content for your business and companies.',
+        title: 'Mobile App Development',
+        description: 'Building high-performance and visually stunning mobile applications using Flutter for Android and iOS.',
     },
     {
         id: 6,
-        title: 'Digital Marketing',
-        description: 'Promote your business with our digital marketing team.',
+        title: 'Enterprise System Maintenance',
+        description: 'Ensure smooth operation and optimal performance of your business systems with our expert database maintenance services.',
     },
 ];
 const Service = () => {

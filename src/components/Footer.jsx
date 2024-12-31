@@ -1,5 +1,5 @@
 import {
-    FaDiscord,
+  
     FaFacebook,
     FaGithub,
     FaInstagram,
@@ -31,7 +31,7 @@ const Footer = () => {
                             />
                             <button
                                 type='submit'
-                                className='bg-gradient-to-r from-pink-400 to-blue-500 text-white px-4 
+                                className='bg-gradient-to-r from-violet-500 to-blue-900 text-white px-4 
                 py-2 rounded-r-lg'>
                                 Subscribe
                             </button>
@@ -70,9 +70,6 @@ const Footer = () => {
                             href='https://wa.me/595976512388?text=Hola!%20Quisiera%20contactarme%20con%20usted.%20'
                             className='text-gray-400 hover:text-white'>
                             <FaWhatsapp />
-                        </a>
-                        <a href='#' className='text-gray-400 hover:text-white'>
-                            <FaDiscord />
                         </a>
                     </div>
                     <div className='flex space-x-4'>

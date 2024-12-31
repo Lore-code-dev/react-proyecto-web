@@ -28,7 +28,7 @@ const About = () => {
                                 </label>
                                 <div className='grow bg-gray-800 rounded-full h-2.5'>
                                     <div
-                                        className='bg-gradient-to-r from-violet-400 to-blue-500 h-2.5 rounded-full 
+                                        className='bg-gradient-to-r from-violet-800 to-blue-800 h-2.5 rounded-full 
                     transform transition-transform duration-300 hover:scale-105 w-10/12'></div>
                                 </div>
                             </div>
@@ -38,7 +38,7 @@ const About = () => {
                                 </label>
                                 <div className='grow bg-gray-800 rounded-full h-2.5'>
                                     <div
-                                        className='bg-gradient-to-r from-pink-400 to-blue-500 h-2.5 rounded-full 
+                                        className='bg-gradient-to-r from-pink-500 to-blue-800 h-2.5 rounded-full 
                     transform transition-transform duration-300 hover:scale-105 w-11/12'></div>
                                 </div>
                             </div>
@@ -48,7 +48,7 @@ const About = () => {
                                 </label>
                                 <div className='grow bg-gray-800 rounded-full h-2.5'>
                                     <div
-                                        className='bg-gradient-to-r from-violet-400 to-blue-500 h-2.5 rounded-full 
+                                        className='bg-gradient-to-r from-violet-500 to-blue-800 h-2.5 rounded-full 
                     transform transition-transform duration-300 hover:scale-105 w-9/12'></div>
                                 </div>
                             </div>
@@ -58,7 +58,7 @@ const About = () => {
                                 </label>
                                 <div className='grow bg-gray-800 rounded-full h-2.5'>
                                     <div
-                                        className='bg-gradient-to-r from-pink-400 to-blue-500 h-2.5 rounded-full 
+                                        className='bg-gradient-to-r from-pink-400 to-blue-800 h-2.5 rounded-full 
                     transform transition-transform duration-300 hover:scale-105 w-11/12'></div>
                                 </div>
                             </div>
@@ -68,7 +68,7 @@ const About = () => {
                                 </label>
                                 <div className='grow bg-gray-800 rounded-full h-2.5'>
                                     <div
-                                        className='bg-gradient-to-r from-violet-400 to-blue-500 h-2.5 rounded-full 
+                                        className='bg-gradient-to-r from-violet-800 to-blue-800 h-2.5 rounded-full 
                     transform transition-transform duration-300 hover:scale-105 w-9/12'></div>
                                 </div>
                             </div>
@@ -78,7 +78,7 @@ const About = () => {
                                 </label>
                                 <div className='grow bg-gray-800 rounded-full h-2.5'>
                                     <div
-                                        className='bg-gradient-to-r from-pink-400 to-blue-500 h-2.5 rounded-full 
+                                        className='bg-gradient-to-r from-pink-500 to-blue-800 h-2.5 rounded-full 
                     transform transition-transform duration-300 hover:scale-105 w-9/12'></div>
                                 </div>
                             </div>
@@ -88,7 +88,7 @@ const About = () => {
                                 </label>
                                 <div className='grow bg-gray-800 rounded-full h-2.5'>
                                     <div
-                                        className='bg-gradient-to-r from-violet-400 to-blue-500 h-2.5 rounded-full 
+                                        className='bg-gradient-to-r from-violet-500 to-blue-800 h-2.5 rounded-full 
                     transform transition-transform duration-300 hover:scale-105 w-9/12'></div>
                                 </div>
                             </div>
@@ -97,7 +97,7 @@ const About = () => {
                             <div>
                                 <h3
                                     className='text-2xl font-bold text-transparent bg-clip-text 
-                bg-gradient-to-r from-pink-400 to-blue-500'>
+                bg-gradient-to-r from-violet-400 to-blue-800'>
                                     1
                                 </h3>
                                 <p>Year Experience</p>
@@ -105,16 +105,16 @@ const About = () => {
                             <div>
                                 <h3
                                     className='text-2xl font-bold text-transparent bg-clip-text 
-                bg-gradient-to-r from-green-400 to-blue-500'>
-                                    50+
+                bg-gradient-to-r from-blue-400 to-blue-800'>
+                                    Enterprise +
                                 </h3>
                                 <p>Projects Completed</p>
                             </div>
                             <div>
                                 <h3
                                     className='text-2xl font-bold text-transparent bg-clip-text 
-                bg-gradient-to-r from-green-400 to-blue-500'>
-                                    10+
+                bg-gradient-to-r from-pink-400 to-blue-800'>
+                                    More +
                                 </h3>
                                 <p>Happy Clients</p>
                             </div>
