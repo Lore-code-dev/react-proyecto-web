@@ -46,19 +46,29 @@ const Footer = () => {
                         &copy; {new Date().getFullYear()} All rights reserved.
                     </p>
                     <div className='flex space-x-4 my-4 md:my-0'>
-                        <a href='#' className='text-gray-400 hover:text-white'>
+                        <a
+                            href='https://www.facebook.com/share/Mzwb3vyENVTzGb19/?mibextid=LQQJ4d'
+                            className='text-gray-400 hover:text-white'>
                             <FaFacebook />
                         </a>
-                        <a href='#' className='text-gray-400 hover:text-white'>
+                        <a
+                            href='https://www.instagram.com/loresanabriac_?igsh=NnJsNjNyNHdoMGl3&utm_source=qr'
+                            className='text-gray-400 hover:text-white'>
                             <FaInstagram />
                         </a>
-                        <a href='#' className='text-gray-400 hover:text-white'>
+                        <a
+                            href='https://www.linkedin.com/in/lorena-sanabria-cabral-106320240?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
+                            className='text-gray-400 hover:text-white'>
                             <FaLinkedin />
                         </a>
-                        <a href='#' className='text-gray-400 hover:text-white'>
+                        <a
+                            href='https://github.com/Lore-code-dev'
+                            className='text-gray-400 hover:text-white'>
                             <FaGithub />
                         </a>
-                        <a href='#' className='text-gray-400 hover:text-white'>
+                        <a
+                            href='https://wa.me/595976512388?text=Hola!%20Quisiera%20contactarme%20con%20usted.%20'
+                            className='text-gray-400 hover:text-white'>
                             <FaWhatsapp />
                         </a>
                         <a href='#' className='text-gray-400 hover:text-white'>

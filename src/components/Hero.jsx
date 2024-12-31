@@ -13,7 +13,7 @@ const Hero = () => {
                 <span className='text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-blue-500'>
                     Lorena Sanabria
                 </span>
-                , Full-Stack Developer
+                , Frontend and Backend Developer
             </h1>
             <p className='mt-4 text-lg text-gray-300'>
                 I specialize in building modern and responsive web applications.
