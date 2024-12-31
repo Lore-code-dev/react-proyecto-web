@@ -1,9 +1,13 @@
+import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 const Navbar = () => {
     return (
         <nav className='bg-black text-white px-8 md:px-16 lg:px-24'>
             <div className='container py-2 flex justify-center md:justify-between items-center'>
                 <div className='text-2xl font-bold hidden md:inline'>
-                    Welcome to my Website!
+                    Welcome to my Website{' '}
+                    <FontAwesomeIcon icon={faLaptopCode} />
                 </div>
                 <div className='space-x-6'>
                     <a href='#home' className='hover:text-gray-400'>
