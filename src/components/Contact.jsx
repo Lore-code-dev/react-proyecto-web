@@ -11,10 +11,10 @@ const Contact = () => {
                     <div className='flex-1'>
                         <h3
                             className='text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r 
-            from-green-400 to-blue-500 mb-4'></h3>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+            from-green-400 to-blue-500 mb-4'></h3>
                         <p></p>
                         <div className='mb-4 mt-8'>
-                            <FaEnvelope className='inline-block text-blue-400 mr-2'></FaEnvelope>
+                            <FaEnvelope className='inline-block text-violet-800 mr-2'></FaEnvelope>
                             <a
                                 href='mailto:youremail@example.com'
                                 className='hover:underline'>
@@ -22,11 +22,11 @@ const Contact = () => {
                             </a>
                         </div>
                         <div className='mb-4'>
-                            <FaPhone className='inline-block text-blue-400 mr-2'></FaPhone>
+                            <FaPhone className='inline-block text-blue-800 mr-2'></FaPhone>
                             <span>0976512388</span>
                         </div>
                         <div className='mb-4'>
-                            <FaMapMarkedAlt className='inline-block text-blue-400 mr-2'></FaMapMarkedAlt>
+                            <FaMapMarkedAlt className='inline-block text-pink-800 mr-2'></FaMapMarkedAlt>
                             <span>Asunción, Paraguay</span>
                         </div>
                     </div>
@@ -39,7 +39,7 @@ const Contact = () => {
                                 <input
                                     type='text'
                                     className='w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none
-                    focus:border-blue-400'
+                    focus:border-violet-400'
                                     placeholder='Enter You Name'
                                 />
                             </div>
@@ -50,7 +50,7 @@ const Contact = () => {
                                 <input
                                     type='text'
                                     className='w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none
-                    focus:border-blue-400'
+                    focus:border-violet-400'
                                     placeholder='Enter You Email'
                                 />
                             </div>
@@ -61,16 +61,18 @@ const Contact = () => {
                                 <textarea
                                     type='text'
                                     className='w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none
-                    focus:border-blue-400'
+                    focus:border-violet-400'
                                     rows='5'
                                     placeholder='Enter You Message'
                                 />
                             </div>
-                            <button
-                                className='bg-gradient-to-r from-violet-800 to-blue-900 text-white hidden md:inline
+                            <div className='flex justify-end'>
+                                <button
+                                    className='bg-gradient-to-r from-violet-800 via-violet-700 to-blue-900 text-white md:inline
             transform transition-transform duration-300 hover:scale-105 px-8 py-2 rounded-full'>
-                                Send
-                            </button>
+                                    Send
+                                </button>
+                            </div>
                         </form>
                     </div>
                 </div>

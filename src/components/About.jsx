@@ -103,20 +103,20 @@ const About = () => {
                                 <p>Year Experience</p>
                             </div>
                             <div>
-                                <h3
+                                {/* <h3
                                     className='text-2xl font-bold text-transparent bg-clip-text 
                 bg-gradient-to-r from-blue-400 to-blue-800'>
                                     Enterprise +
                                 </h3>
-                                <p>Projects Completed</p>
+                                <p>Projects Completed</p> */}
                             </div>
                             <div>
                                 <h3
                                     className='text-2xl font-bold text-transparent bg-clip-text 
                 bg-gradient-to-r from-pink-400 to-blue-800'>
-                                    More +
+                                    Enterprise +
                                 </h3>
-                                <p>Happy Clients</p>
+                                <p>Projects Completed</p>
                             </div>
                         </div>
                     </div>

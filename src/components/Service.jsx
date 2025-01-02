@@ -23,12 +23,14 @@ const services = [
     {
         id: 5,
         title: 'Mobile App Development',
-        description: 'Building high-performance and visually stunning mobile applications using Flutter for Android and iOS.',
+        description:
+            'Building high-performance and visually stunning mobile applications using Flutter for Android and iOS.',
     },
     {
         id: 6,
         title: 'Enterprise System Maintenance',
-        description: 'Ensure smooth operation and optimal performance of your business systems with our expert database maintenance services.',
+        description:
+            'Ensure smooth operation and optimal performance of your business systems with our expert database maintenance services.',
     },
 ];
 const Service = () => {
@@ -51,7 +53,7 @@ const Service = () => {
                             </div>
                             <h3
                                 className='mt-2 text-2xl font-bold text-transparent bg-clip-text 
-              bg-gradient-to-r from-violet-400 to-blue-500'>
+              bg-gradient-to-r from-violet-700 via-pink-300 to-blue-500'>
                                 {service.title}
                             </h3>
                             <p className='mt-2 text-gray-300'>
@@ -60,7 +62,7 @@ const Service = () => {
                             <a
                                 href='#'
                                 className='mt-4 inline-block text-blue-400 hover:text-blue-500'>
-                                {/* Read More */}
+                                Read More
                             </a>
                         </div>
                     ))}

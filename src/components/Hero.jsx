@@ -21,16 +21,20 @@ const Hero = () => {
                 applications.
             </p>
             <div className='mt-8 space-x-4'>
-                <button
+                <a
+                    href='https://wa.me/595976512388?text=Hola!%20Quisiera%20contactarme%20con%20usted.%20'
+                    target='_blank'
                     className='bg-gradient-to-r from-blue-900 to-blue-500 text-white
-            transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full'>
+    transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full'>
                     Contact With Me
-                </button>
-                <button
+                </a>
+                <a
+                    href='https://drive.google.com/file/d/1ltrvFUE1IeIkyLwS1C2KeUnBFKl2NP7B/view?usp=sharing'
+                    download // Hace que el archivo se descargue automáticamente
                     className='bg-gradient-to-r from-pink-800 to-violet-500 text-white
-            transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full'>
+    transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full'>
                     Download CV
-                </button>
+                </a>
             </div>
         </div>
     );

@@ -14,7 +14,7 @@ const Navbar = () => {
                         Home
                     </a>
                     <a href='#about' className='hover:text-gray-400'>
-                        About Me
+                        About
                     </a>
                     <a href='#service' className='hover:text-gray-400'>
                         Services
@@ -26,11 +26,13 @@ const Navbar = () => {
                         Contact
                     </a>
                 </div>
-                <button
+                <a
+                    href='https://wa.me/595976512388?text=Hola!%20Quisiera%20contactarme%20con%20usted.%20'
+                    target='_blank'
                     className='bg-gradient-to-r from-violet-500 to-blue-900 text-white hidden md:inline
             transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full'>
                     Connect Me
-                </button>
+                </a>
             </div>
         </nav>
     );

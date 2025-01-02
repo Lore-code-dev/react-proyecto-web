@@ -1,11 +1,12 @@
 import {
-  
     FaFacebook,
     FaGithub,
     FaInstagram,
     FaLinkedin,
     FaWhatsapp,
 } from 'react-icons/fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCode } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
     return (
@@ -27,11 +28,11 @@ const Footer = () => {
                                 type='email'
                                 placeholder='Your email'
                                 className='w-full p-2 rounded-l-lg bg-gray-800 border border-gray-600 
-                focus:outline-none focus:border-green-400'
+                focus:outline-none focus:border-violet-400'
                             />
                             <button
                                 type='submit'
-                                className='bg-gradient-to-r from-violet-500 to-blue-900 text-white px-4 
+                                className='bg-gradient-to-r from-pink-900 via-violet-900 to-blue-900 text-white px-4 
                 py-2 rounded-r-lg'>
                                 Subscribe
                             </button>
@@ -43,7 +44,11 @@ const Footer = () => {
                     className='border-t border-gray-600 pt-4 flex flex-col md:flex-row 
           justify-between items-center'>
                     <p className='text-gray-400'>
-                        &copy; {new Date().getFullYear()} All rights reserved.
+                        &copy; {new Date().getFullYear()} Code by Lore Sanabria
+                        <FontAwesomeIcon
+                            icon={faCode}
+                            className='ml-2 text-blue-700'
+                        />
                     </p>
                     <div className='flex space-x-4 my-4 md:my-0'>
                         <a

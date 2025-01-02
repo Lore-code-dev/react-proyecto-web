@@ -1,27 +1,53 @@
 import employeeMSImage from '../assets/employee-ms.png';
 import bookMSImage from '../assets/admin-dashboard.png';
-
+import billPy from '../assets/billpy.png';
+import ecommerce from '../assets/ecommerce.png';
+import pokemon from '../assets/pokemon.png';
+import plants from '../assets/plants.png';
 const projects = [
     {
         id: 1,
-        name: 'Employee MS',
-        technologies: 'MERN Stack',
+        name: 'Wallet App Demo',
+        technologies: 'Mobile App',
         image: employeeMSImage,
-        github: 'https://github.com/YouafKhan1',
+        github: 'https://media.licdn.com/dms/image/v2/D4D22AQF9qCYFPY5QiA/feedshare-shrink_1280/feedshare-shrink_1280/0/1718404781627?e=1738800000&v=beta&t=DQpr4oUVCNF7NUROj65IQ_ojbRIk972jaejQJutY5tA',
     },
     {
         id: 2,
-        name: 'Blog App',
-        technologies: 'MERN Stack',
+        name: 'ÑamopuApp',
+        technologies: 'Mobile App',
         image: bookMSImage,
-        github: 'https://github.com/YouafKhan1',
+        github: 'https://www.figma.com/proto/3I4v0NUrUcnTJlR0CMf9Kl/%C3%91amopuApp?node-id=44-112&starting-point-node-id=44%3A112&t=zHMdaJAjYruhWkVw-1',
     },
     {
         id: 3,
-        name: 'Book MS',
-        technologies: 'MERN Stack',
-        image: employeeMSImage,
-        github: 'https://github.com/YouafKhan1',
+        name: 'LPSoft',
+        technologies: 'Dynamic Forms for HR',
+        image: billPy,
+        github: '',
+    },
+
+    {
+        id: 4,
+        name: 'E-Commerce',
+        technologies: 'Website',
+        image: ecommerce,
+        github: 'https://lore-code-dev.github.io/hallstore.io.github/',
+    },
+
+    {
+        id: 5,
+        name: 'Pokemon Game',
+        technologies: 'Website',
+        image: pokemon,
+        github: '',
+    },
+    {
+        id: 6,
+        name: 'Plants Service',
+        technologies: 'Website',
+        image: plants,
+        github: '',
     },
 ];
 
@@ -56,7 +82,7 @@ const Projects = () => {
               from-violet-800 to-blue-900 text-white px-4 py-2 rounded-full'
                                 target='_blank'
                                 rel='noopener noreferrer'>
-                                GitHub
+                                Check It Out
                             </a>
                         </div>
                     ))}
