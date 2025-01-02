@@ -1,36 +1,52 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+    faCodeCompare,
+    faCoffee,
+    faDatabase,
+    faLaptopHouse,
+    faMobile,
+    faPaintBrush,
+} from '@fortawesome/free-solid-svg-icons';
+
 const services = [
     {
         id: 1,
         title: 'Web Design',
         description:
             'Creating visually appealing and user-friendly web designs.',
+        icon: faPaintBrush,
     },
     {
         id: 2,
         title: 'Frontend Development',
         description: 'Building responsive and interactive user interfaces.',
+        icon: faCodeCompare,
     },
     {
         id: 3,
         title: 'Backend Development',
         description: 'Developing robust server-side logic and databases.',
+        icon: faDatabase,
     },
     {
         id: 4,
-        title: 'Full-Stack Development',
+        title: 'Fullstack Development',
         description: 'Combining both frontend and backend development skills.',
+        icon: faCoffee,
     },
     {
         id: 5,
-        title: 'Mobile App Development',
+        title: 'Mobile Development',
         description:
             'Building high-performance and visually stunning mobile applications using Flutter for Android and iOS.',
+        icon: faMobile,
     },
     {
         id: 6,
-        title: 'Enterprise System Maintenance',
+        title: 'System Maintenance',
         description:
             'Ensure smooth operation and optimal performance of your business systems with our expert database maintenance services.',
+        icon: faLaptopHouse,
     },
 ];
 const Service = () => {
@@ -51,18 +67,24 @@ const Service = () => {
               bg-gradient-to-r from-pink-600 to-white-400'>
                                 {service.id}
                             </div>
-                            <h3
-                                className='mt-2 text-2xl font-bold text-transparent bg-clip-text 
+                            <div className='flex items-center mt-2'>
+                                <h3
+                                    className='mt-2 text-2xl font-bold text-transparent bg-clip-text 
               bg-gradient-to-r from-violet-700 via-pink-300 to-blue-500'>
-                                {service.title}
-                            </h3>
+                                    {service.title}
+                                    <FontAwesomeIcon
+                                        icon={service.icon}
+                                        className='text-blue-800 text-2xl ml-3'
+                                    />
+                                </h3>
+                            </div>
                             <p className='mt-2 text-gray-300'>
                                 {service.description}
                             </p>
                             <a
                                 href='#'
                                 className='mt-4 inline-block text-blue-400 hover:text-blue-500'>
-                                Read More
+                                {/* Read More */}
                             </a>
                         </div>
                     ))}

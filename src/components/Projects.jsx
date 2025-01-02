@@ -78,8 +78,8 @@ const Projects = () => {
                             </p>
                             <a
                                 href={project.github}
-                                className='inline-block bg-gradient-to-r 
-              from-violet-800 to-blue-900 text-white px-4 py-2 rounded-full'
+                                className='inline-block bg-gradient-to-r from-blue-800 via-violet-900 to-blue-900 text-white px-4
+                py-2 rounded-full'
                                 target='_blank'
                                 rel='noopener noreferrer'>
                                 Check It Out
