@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Navbar = () => {
     return (
-        <nav className='bg-black text-white px-8 md:px-16 lg:px-24 bg-gradient-to-r  from-blue-900 via-black-800 to-black-400'>
+        <nav className='bg-black text-white px-8 md:px-16 lg:px-24 bg-gradient-to-r from-blue-900 via-black-800 to-black-400'>
             <div className='container py-2 flex justify-center md:justify-between items-center'>
                 <div className='text-2xl font-bold hidden md:inline'>
                     Welcome to my Website{' '}
