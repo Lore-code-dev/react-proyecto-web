@@ -80,7 +80,7 @@ const Projects = () => {
                             }}
                             viewport={{
                                 once: true,
-                                margin: '',
+                                margin: '-150px',
                             }}
                             className='bg-gray-800 p-6 rounded-lg hover:shadow-lg'>
                             <img

@@ -65,7 +65,7 @@ const Service = () => {
                     }}
                     viewport={{
                         once: true,
-                        margin: '',
+                        margin: '-150px',
                     }}
                     className='text-4xl font-bold text-center mb-12'>
                     My Services
@@ -90,7 +90,7 @@ const Service = () => {
                             }}
                             viewport={{
                                 once: true,
-                                margin: '',
+                                margin: '-150px',
                             }}
                             className='bg-secondary/20 px-6 pb-6 rounded-lg hover:shadow-lg '>
                             <div

@@ -61,7 +61,7 @@ const Contact = () => {
     return (
         <div className='py-20' id='contact'>
             <div className='container mx-auto px-8 md:px-16 lg:px-24'>
-                <h2 className='text-4xl font-bold text-center mb-12'>
+                <h2 class='relative z-10 text-lg md:text-7xl text-center font-sans font-bold mb-12'>
                     Contact Me
                 </h2>
                 <div className='flex flex-col md:flex-row items-center md:space-x-12'>

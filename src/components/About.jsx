@@ -50,12 +50,17 @@ const About = () => {
                                     <div className='grow bg-gray-800 rounded-full h-2.5'>
                                         <motion.div
                                             initial={{ scaleX: 0 }}
-                                            whileInView={{ scaleX: 1 }}
+                                            whileInView={{
+                                                scaleX: 1,
+                                                transition: {
+                                                    duration: 0.8,
+                                                },
+                                            }}
                                             viewport={{
                                                 once: true,
-                                                margin: '',
+                                                margin: '-150px',
                                             }}
-                                            className={`bg-primary h-2.5 rounded-full transform transition-transform duration-300 origin-left ${level}`}
+                                            className={`bg-primary h-2.5 rounded-full origin-left ${level}`}
                                         />
                                     </div>
                                 </div>
