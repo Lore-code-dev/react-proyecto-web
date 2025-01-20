@@ -9,16 +9,26 @@ const Contact = () => {
         message: '',
     });
 
+    const [isValid, setIsvalid] = useState(false);
+
     // Función para actualizar el estado de los campos del formulario
     const handleChange = e => {
         const { name, value } = e.target;
-        setFormData({ ...formData, [name]: value });
+        const updatedFormData = { ...formData, [name]: value };
+
+        setFormData(updatedFormData);
+        setIsvalid(
+            Object.values(updatedFormData).every(val => val.trim() !== '')
+        );
     };
 
     // Función para manejar el envío del formulario
     const handleSubmit = e => {
         e.preventDefault();
 
+        if (!isValid) {
+            return;
+        }
         // Enviar el formulario a EmailJS
         emailjs
             .sendForm(
@@ -37,6 +47,8 @@ const Contact = () => {
                     email: '',
                     message: '',
                 });
+
+                setIsvalid(false);
             })
             .catch(error => {
                 console.error('Error sending email:', error.text);
@@ -47,7 +59,7 @@ const Contact = () => {
     };
 
     return (
-        <div className='bg-black text-white py-20' id='contact'>
+        <div className='py-20' id='contact'>
             <div className='container mx-auto px-8 md:px-16 lg:px-24'>
                 <h2 className='text-4xl font-bold text-center mb-12'>
                     Contact Me
@@ -117,7 +129,11 @@ const Contact = () => {
                             <div className='flex justify-end'>
                                 <button
                                     type='submit'
-                                    className='bg-gradient-to-r from-violet-800 via-violet-700 to-blue-900 text-white md:inline transform transition-transform duration-300 hover:scale-105 px-8 py-2 rounded-full'>
+                                    className={`bg-gradient-to-r from-violet-800 via-violet-700 to-blue-900 text-white md:inline transform transition-transform duration-300  px-8 py-2 rounded-full ${
+                                        isValid
+                                            ? 'grayscale-0 hover:scale-105'
+                                            : 'cursor-not-allowed grayscale'
+                                    }`}>
                                     Send
                                 </button>
                             </div>

@@ -1,9 +1,11 @@
-import employeeMSImage from '../assets/employee-ms.png';
-import bookMSImage from '../assets/admin-dashboard.png';
-import billPy from '../assets/billpy.png';
-import ecommerce from '../assets/ecommerce.png';
-import pokemon from '../assets/pokemon.png';
-import plants from '../assets/plants.png';
+import employeeMSImage from '@/assets/employee-ms.png';
+import bookMSImage from '@/assets/admin-dashboard.png';
+import billPy from '@/assets/billPy.png';
+import ecommerce from '@/assets/ecommerce.png';
+import pokemon from '@/assets/pokemon.png';
+import plants from '@/assets/plants.png';
+import { motion } from 'motion/react';
+
 const projects = [
     {
         id: 1,
@@ -53,17 +55,34 @@ const projects = [
 
 const Projects = () => {
     return (
-        <div className='bg-black text-white py-20' id='project'>
+        <div className=' py-20' id='project'>
             <div className='container mx-auto px-8 md:px-16 lg:px-24'>
                 <h2 className='text-4xl font-bold text-center mb-12'>
                     My Projects
                 </h2>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
                     {projects.map(project => (
-                        <div
+                        <motion.div
                             key={project.id}
-                            className='bg-gray-800 p-6 rounded-lg hover:shadow-lg 
-            transform transition-transform duration-300 hover:scale-105'>
+                            initial={{
+                                y: '40px',
+                                opacity: 0,
+                                filter: 'blur(6px)',
+                            }}
+                            whileInView={{
+                                y: '0',
+                                opacity: 1,
+                                filter: 'blur(0px)',
+                                transition: {
+                                    delay: 0.05 * project.id,
+                                    bounce: false,
+                                },
+                            }}
+                            viewport={{
+                                once: true,
+                                margin: '',
+                            }}
+                            className='bg-gray-800 p-6 rounded-lg hover:shadow-lg'>
                             <img
                                 src={project.image}
                                 alt={project.name}
@@ -78,13 +97,13 @@ const Projects = () => {
                             </p>
                             <a
                                 href={project.github}
-                                className='inline-block bg-gradient-to-r from-blue-800 via-violet-900 to-blue-900 text-white px-4
+                                className='inline-block bg-primary text-black/80 px-4 hover:bg-primary/80 transition
                 py-2 rounded-full'
                                 target='_blank'
                                 rel='noopener noreferrer'>
                                 Check It Out
                             </a>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </div>

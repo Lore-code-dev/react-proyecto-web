@@ -7,6 +7,7 @@ import {
     faMobile,
     faPaintBrush,
 } from '@fortawesome/free-solid-svg-icons';
+import { motion } from 'motion/react';
 
 const services = [
     {
@@ -51,30 +52,58 @@ const services = [
 ];
 const Service = () => {
     return (
-        <div className='bg-black text-white py-20' id='service'>
+        <div className=' py-20' id='service'>
             <div className='container mx-auto px-8 md:px-16 lg:px-24'>
-                <h2 className='text-4xl font-bold text-center mb-12'>
+                <motion.h2
+                    initial={{
+                        y: '40px',
+                        opacity: 0,
+                    }}
+                    whileInView={{
+                        y: '0',
+                        opacity: 1,
+                    }}
+                    viewport={{
+                        once: true,
+                        margin: '',
+                    }}
+                    className='text-4xl font-bold text-center mb-12'>
                     My Services
-                </h2>
+                </motion.h2>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
                     {services.map(service => (
-                        <div
+                        <motion.div
                             key={service.id}
-                            className='bg-gray-800 px-6 pb-6 rounded-lg hover:shadow-lg transform 
-              transition-transform duration-300 hover:scale-105'>
+                            initial={{
+                                y: '40px',
+                                opacity: 0,
+                                filter: 'blur(6px)',
+                            }}
+                            whileInView={{
+                                y: '0',
+                                opacity: 1,
+                                filter: 'blur(0px)',
+                                transition: {
+                                    delay: 0.05 * service.id,
+                                    bounce: false,
+                                },
+                            }}
+                            viewport={{
+                                once: true,
+                                margin: '',
+                            }}
+                            className='bg-secondary/20 px-6 pb-6 rounded-lg hover:shadow-lg '>
                             <div
                                 className='text-right text-2xl font-bold text-transparent bg-clip-text 
               bg-gradient-to-r from-pink-600 to-white-400'>
                                 {service.id}
                             </div>
                             <div className='flex items-center mt-2'>
-                                <h3
-                                    className='mt-2 text-2xl font-bold text-transparent bg-clip-text 
-              bg-gradient-to-r from-violet-700 via-pink-300 to-blue-500'>
+                                <h3 className='mt-2 text-2xl font-bold text-primary'>
                                     {service.title}
                                     <FontAwesomeIcon
                                         icon={service.icon}
-                                        className='text-blue-800 text-2xl ml-3'
+                                        className='text-primary text-2xl ml-3'
                                     />
                                 </h3>
                             </div>
@@ -86,7 +115,7 @@ const Service = () => {
                                 className='mt-4 inline-block text-blue-400 hover:text-blue-500'>
                                 {/* Read More */}
                             </a>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </div>

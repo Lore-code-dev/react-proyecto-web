@@ -32,7 +32,7 @@ const Footer = () => {
                             />
                             <button
                                 type='submit'
-                                className='bg-gradient-to-r from-pink-900 via-violet-900 to-blue-900 text-white px-4 
+                                className='bg-primary text-black/80 px-4 
                 py-2 rounded-r-lg'>
                                 Subscribe
                             </button>

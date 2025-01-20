@@ -6,7 +6,12 @@ export default {
       "./src/**/*.{js,ts,jsx,tsx}",
     ],
     theme: {
-      extend: {},
+      extend: {
+        colors:{
+          'primary': '#E2CBFF',
+          'secondary': '#393bb2'
+        }
+      },
     },
-    plugins: [],
+    plugins: [require('tailwindcss-motion')]
   }
